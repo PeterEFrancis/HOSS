@@ -1,0 +1,188 @@
+:root {
+  --dark-brown: #371f18;
+  --brown: #5a3c33;
+  --teal: #356e5e;
+  --green: #509642;
+  --red: #883a35;
+  --white: #ededed;
+}
+
+@font-face {
+    font-family: "work-sans";
+    src: url(/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: "work-sans";
+}
+
+br {
+  user-select: none;
+}
+
+@font-face {
+    font-family: "Twiggy";
+    src: url("https://db.onlinewebfonts.com/t/8d10e93aa305629223fcd850f6e9a810.eot");
+    src: url("https://db.onlinewebfonts.com/t/8d10e93aa305629223fcd850f6e9a810.eot?#iefix")
+            format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/8d10e93aa305629223fcd850f6e9a810.woff2")
+            format("woff2"),
+        url("https://db.onlinewebfonts.com/t/8d10e93aa305629223fcd850f6e9a810.woff")
+            format("woff"),
+        url("https://db.onlinewebfonts.com/t/8d10e93aa305629223fcd850f6e9a810.ttf")
+            format("truetype"),
+        url("https://db.onlinewebfonts.com/t/8d10e93aa305629223fcd850f6e9a810.svg#Twiggy")
+            format("svg");
+}
+
+
+.stone {
+  background: url(/img/rock.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.wood {
+  background-image: url(/img/wood.jpg);
+  background-size: 300px;
+
+}
+
+.blurb {
+  /* font-size: 1.75em;
+  line-height: 1.242em; */
+}
+
+.birch {
+  background-image: url(/img/birch.jpg);
+}
+
+.bark {
+  background-image: url(/img/brown-bark.jpg);
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: lighten;
+}
+
+.beam {
+  border: 25px solid transparent;
+  border-image: url(/img/beam.png) 35 round;
+}
+
+
+.frame {
+  border: 10px solid transparent;
+  border-image: url(/img/dark-bark.jpg) 35 round;
+}
+
+
+.shadow {
+  box-shadow: 5px 5px 10px black;
+}
+
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+
+.logo {
+  /* color: var(--green) !important; */
+  font-family: "FattiPattiFLF";
+  text-decoration: none !important;
+}
+
+.twiggy {
+  font-family: "Twiggy";
+}
+
+.main-btn {
+  font-size: 1.5em;
+  margin: 15px;
+  padding: 15px;
+  outline: 0px !important;
+  cursor: pointer;
+}
+
+.main-btn:active {
+  background-image: url(/img/brown-bark.jpg);
+}
+
+
+.other-busi {
+  max-width: 300px;
+  cursor: pointer;
+}
+
+
+#footer {
+  color: white;
+}
+
+#footer ul {
+  list-style: none;
+  margin-left: -40px;
+  font-weight: thin;
+}
+
+#footer li {
+  color: white !important;
+
+}
+
+
+button {
+  outline: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* for the wiggle */
+
+@-webkit-keyframes wiggle
+{
+    0% {}
+    33% {-webkit-transform: rotateZ(4deg);}
+    66% {-webkit-transform: rotateZ(-4deg);}
+    100% {}
+}
+@-moz-keyframes wiggle
+{
+    0% {}
+    33% {-moz-transform: rotateZ(4deg);}
+    66% {-moz-transform: rotateZ(-4deg);}
+    100% {}
+}
+@-o-keyframes wiggle
+{
+    0% {}
+    33% {-o-transform: rotateZ(4deg);}
+    66% {-o-transform: rotateZ(-4deg);}
+    100% {}
+}
+@keyframes wiggle
+{
+    0% {}
+    33% {transform: rotateZ(4deg);}
+    66% {transform: rotateZ(-4deg);}
+    100% {}
+}
+
+.wiggle:hover {
+    -webkit-animation: wiggle 1s ease .2s 1;
+    -moz-animation: wiggle 1s ease .2s 1;
+    -o-animation: wiggle 1s ease .2s 1;
+    animation: wiggle 1s ease .2s 1;
+}

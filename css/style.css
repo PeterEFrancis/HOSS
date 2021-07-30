@@ -1,0 +1,387 @@
+@media only screen and (max-width: 768px) {
+  .container-fluid
+  {
+    text-align: center;
+  }
+}
+
+
+@font-face {
+    font-family: "FattiPattiFLF";
+    src: url("fonts/FattiPattiFLF.ttf");
+}
+
+@font-face {
+    font-family: "Times";
+    src: url("fonts/times-new-roman.ttf");
+}
+
+/* @font-face {
+    font-family: "twiggy";
+    src: url("fonts/Twiggy-Regular.otf");
+} */
+
+@font-face {
+    font-family: "Twiggy";
+    src: url("//db.onlinewebfonts.com/t/8d10e93aa305629223fcd850f6e9a810.eot");
+    src: url("//db.onlinewebfonts.com/t/8d10e93aa305629223fcd850f6e9a810.eot?#iefix")
+            format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/8d10e93aa305629223fcd850f6e9a810.woff2")
+            format("woff2"),
+        url("//db.onlinewebfonts.com/t/8d10e93aa305629223fcd850f6e9a810.woff")
+            format("woff"),
+        url("//db.onlinewebfonts.com/t/8d10e93aa305629223fcd850f6e9a810.ttf")
+            format("truetype"),
+        url("//db.onlinewebfonts.com/t/8d10e93aa305629223fcd850f6e9a810.svg#Twiggy")
+            format("svg");
+}
+
+
+body {
+    background: url(img/birch.jpg) no-repeat fixed center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+}
+
+
+.title {
+    padding: 15px;
+}
+
+h1 {
+    font-size: 70pt;
+}
+h2 {
+    font-size: 40pt;
+    color: #ededed;
+}
+h3 {
+    font-size: 25pt;
+    color: #ededed;
+}
+h4 {
+    font-size: 20pt;
+    color: #ededed;
+}
+p {
+    font-size: 15pt;
+    color: #ededed;
+}
+
+.btn-text {
+    font-size: 30pt;
+    font-family: "Twiggy", "twiggy";
+    color: #371f18;
+}
+
+.space {
+    margin-bottom: 60px;
+}
+
+.frame-container {
+    margin: 30px;
+}
+
+.frame {
+    border: 15px solid #371f18;
+    padding: 20px;
+    border-image: url(images/dark-bark.jpg) 50 round;
+    background-color: #ededed;
+    transition: 0.5s;
+}
+
+.frame:hover {
+    background-color: #dbd9d1;
+    transition: 0.5s;
+}
+
+a.glyphicon {
+    font-size: 30pt;
+    color: #ededed;
+    transition: 0.5s;
+}
+
+.glyphicon:hover {
+    color: blue;
+    transition: 0.5s;
+}
+
+.card {
+    background-color: #862423;
+    margin: 10px;
+    padding: 25px;
+}
+
+
+
+.btn-img {
+    width:450px;
+    margin:0px;
+    border-radius:5px
+}
+
+
+
+
+
+
+
+
+.shadow-b {
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+.shadow-i {
+    box-shadow: 0px 0px 10px 5px black inset;
+}
+
+
+
+#draggable {
+    position: absolute;
+    z-index: 9;
+}
+
+
+
+
+
+.bear {
+    height: 61px;
+    width: 89px;
+    background: url('images/bear-walking-still.png');
+    margin: auto; /*position the [div] on the center*/
+  }
+  .bear:hover {
+    cursor: pointer;
+    background: url('images/bear-gif.gif');
+  }
+
+
+/* for the walk */
+
+@-webkit-keyframes walk
+{
+    0% {}
+    100% {-webkit-transform: translateX(-10px);}
+}
+@-moz-keyframes wiggle
+{
+    0% {}
+    33% {-moz-transform: rotateZ(4deg);}
+    66% {-moz-transform: rotateZ(-4deg);}
+    100% {}
+}
+@-o-keyframes wiggle
+{
+    0% {}
+    33% {-o-transform: rotateZ(4deg);}
+    66% {-o-transform: rotateZ(-4deg);}
+    100% {}
+}
+@keyframes walk {
+    0% {}
+    100% {transform: translateX(-10px);}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOR THE sway */
+
+/* @-webkit-keyframes sway {
+    0% {-webkit-transform: rotate3d(1, 0, 0, -20deg);}
+    50% {-webkit-transform: rotate3d(1, 0, 0, 20deg);}
+    100% {-webkit-transform: rotate3d(1, 0, 0, -20deg));}
+}
+@-moz-keyframes sway {
+    0% {-moz-transform: rotateZ(-4deg);}
+    50% {-moz-transform: rotateZ(4deg);}
+    100% {-moz-transform: rotateZ(-4deg);}
+}
+@-o-keyframes sway {
+    0% {-o-transform: rotateZ(-4deg);}
+    50% {-o-transform: rotateZ(4deg);}
+    100% {-o-transform: rotateZ(-4deg);}
+}
+@keyframes sway {
+    0% {}
+    25% {transform: perspective(500px) rotate3d(1, 0, 0, 20deg) scale(1.09) translate(0px, -5px);}
+    75% {transform: perspective(500px) rotate3d(1, 0, 0, -20deg) scale(0.91743119266) translate(0px, -5px);}
+    100% {}
+}
+
+.sway:hover {
+    -webkit-animation: sway .2s ease 1;
+    -moz-animation: sway .2s ease 1;
+    -o-animation: sway .2s ease 1;
+    animation: sway 2s ease 1;
+}
+ */
+
+/* For the squish */
+
+
+@-webkit-keyframes squishY {
+    0% {}
+    50% {-webkit-transform: scaleY(.8);}
+    100% {}
+}
+@-moz-keyframes squishY {
+    0% {}
+    50% {-moz-transform: scaleY(.8);;}
+    100% {}
+}
+@-o-keyframes squishY {
+    0% {}
+    50% {-o-transform: scaleY(.8);}
+    100% {}
+}
+@keyframes squishY {
+    0% {}
+    50% {transform: scaleY(.8);}
+    100% {}
+}
+
+.squishY:hover {
+    -webkit-animation: squishY .3s ease .2s 1;
+    -moz-animation: squishY .3s ease .2s 1;
+    -o-animation: squishY .3s ease .2s 1;
+    animation: squishY .3s ease .2s 1;
+}
+
+
+
+/* For the squish2 */
+
+
+@-webkit-keyframes squishX {
+    0% {}
+    50% {-webkit-transform: scaleX(.8);}
+    100% {}
+}
+@-moz-keyframes squishX {
+    0% {}
+    50% {-moz-transform: scaleX(.8);;}
+    100% {}
+}
+@-o-keyframes squishX {
+    0% {}
+    50% {-o-transform: scaleX(.8);}
+    100% {}
+}
+@keyframes squishX {
+    0% {}
+    50% {transform: scaleX(.8);}
+    100% {}
+}
+
+.squishX:hover {
+    -webkit-animation: squishX .3s ease .2s 1;
+    -moz-animation: squishX .3s ease .2s 1;
+    -o-animation: squishX .3s ease .2s 1;
+    animation: squishX .3s ease .2s 1;
+}
+
+
+
+
+/* FOR THE MAP */
+
+.map-container-6 {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.map-container-6 iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* FOR THE FOOTER */
+
+#myFooter {
+    background-color: #371f18;
+    color: #ededed;
+    padding-top: 30px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #150a08;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ededed;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: #ededed;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter h2 a {
+    font-size: 50px;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: #ededed;
+}
+
+#myFooter p {
+    font-size: 10pt;
+}
+
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}

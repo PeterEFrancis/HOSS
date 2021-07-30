@@ -1,10 +1,303 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>HOSS'S</title>
-      <meta http-equiv = "refresh" content = "0; url = employee_handbook.html" />
-   </head>
-   <body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-   </body>
+    <link rel="stylesheet" href="style_n.css">
+
+    <title>
+      Hoss's Country Corner
+    </title><!-- Add Favicon -->
+    <link href="css/style_n.css" rel="stylesheet" type="text/css">
+
+    <style>
+      body {
+        background-color: var(--dark-brown);
+      }
+
+      #main {
+        background: url(img/green-boards.png) repeat center;
+        background-size: 400px;
+        box-shadow: 0px 10px 20px black;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div id="main">
+
+      <div class="container">
+        <!-- <div class="jumbotron text-center" style="background-color: var(--brown); margin-top: 20px;">
+          <h1 class="logo">HOSS'S COUNTRY CORNER</h1>
+          <p class="lead" style="color: var(--white);">Est. 1974?</p>
+        </div> -->
+        <div class="jumbotron text-center birch beam shadow" style="margin-top: 20px; border-radius: 0px; border-image: url(img/beam.png) 50px">
+          <img class="img-responsive" src="img/logo.png">
+        </div>
+
+        <!-- Buttons -->
+        <div class="row" style="margin-top: 50px; margin-bottom: 50px;">
+          <div class="col-md-12 text-center twiggy">
+            <button class="btn birch frame main-btn wiggle shadow" onclick="window.location.href='store.html'">store</button>
+            <button class="btn birch frame main-btn wiggle shadow" onclick="window.location.href='events.html'">events</button>
+            <button class="btn birch frame main-btn wiggle shadow" onclick="window.location.href='campground.html'">campground</button>
+            <button class="btn birch frame main-btn wiggle shadow" onclick="window.location.href='about.html'">about</button>
+          </div>
+        </div>
+
+
+
+
+        <!-- Blurb -->
+        <div class="row" style="margin-top: 20px;">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div class="panel panel-default shadow" style="background-color: var(--brown); color: var(--white); border: 0;">
+              <div class="panel-body">
+                <img src="img/outside.jpg" class="img-responsive"/>
+                <p class="text-center lead" style="padding-top: 25px;">
+                  For more than 40 We have been serving the community year-round.
+                  Whether you're looking for your annual hunk of store
+                  cheese, a special book, Adirondack crafts, local maple
+                  syrup, or stocking up camp for your stay, Hoss's has everything: from the fishing license you forgot to renew, to the Long Lake
+                  sweatshirt you'll wear every night! Stop in to explore the store!
+                </p>
+                <div class="bear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- The Park and LVL -->
+      <div class="container-fluid" style="margin-top: 20px; padding: 20px;">
+        <div class="row">
+          <div class="col-sm-6" style="margin-bottom: 30px;">
+            <img src="img/the-park-logo.jpg" class="other-busi img-responsive center-block shadow wiggle" onclick="window.open('https://theparkll.com/')"/>
+          </div>
+          <div class="col-sm-6" style=" margin-bottom: 30px;">
+            <img src="img/the-LVL-logo.jpg" class="other-busi img-responsive center-block shadow wiggle" onclick="window.open('https://thelongviewlodge.com/')"/>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- <div class="contianer">
+      <div class="row space">
+        <div class="col-sm-3">
+        </div>
+
+        <div class="col-sm-6">
+          <div class="panel" style="background-color: #509642;">
+            <div class="panel-body">
+              <h2 class="text-center">
+                Hours
+              </h2>
+
+              <h3 class="text-center">
+                Open 7 days a week!
+              </h3>
+
+              <p class="text-center">
+                <strong>Guaranteed hours:</strong> 10am - 4pm*
+                <br>
+                <br>
+                <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monday:</strong>
+                9am - 5pm
+                <br>
+                <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tuesday:</strong>
+                9am - 5pm
+                <br>
+                <strong>Wednesday:</strong> 9am - 5pm
+                <br>
+                <strong>&nbsp;&nbsp;&nbsp;&nbsp;Thursday:</strong> 9am - 5pm
+                <br>
+                <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;Friday:</strong> 9am - 5pm
+                <br>
+                <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saturday:</strong> 9am -
+                5pm
+                <br>
+                <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sundays:</strong>
+                9am - 4pm
+                <br>
+                <br>
+                <span style="font-size:10pt">*Holiday Hours may vary.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+        </div>
+      </div>
+
+      <div class="row space">
+        <div class="col-sm-1">
+        </div>
+
+        <div class="col-lg-10">
+          <div class="panel" style="background-color: #509642;">
+            <div class="panel-body">
+              <h2 class="text-center">
+                Contact us
+              </h2>
+
+              <p class="text-center">
+                Phone and Email Orders Gladly Accepted!
+              </p>
+
+              <br>
+
+              <div class="container-fluid">
+                <div class="row" style="margin-bottom:0px">
+                  <div class="col-md-5">
+                    <div class="card">
+                      <h3 class="text-center">
+                        Write to us:
+                      </h3>
+
+                      <br>
+
+                      <div class="md-form">
+                        <input class="form-control" id="form-name" placeholder=
+                        "Your name" type="text">
+                      </div>
+
+                      <div class="md-form">
+                        <input class="form-control" id="form-email"
+                        placeholder="Your email" type="text">
+                      </div>
+
+                      <div class="md-form">
+                        <input class="form-control" id="form-Subject"
+                        placeholder="Subject" type="text">
+                      </div>
+
+                      <div class="md-form">
+                        <textarea class="form-control md-textarea" id=
+                        "form-text" placeholder="Your Message" rows="6" style=
+                        "resize:none"></textarea>
+                      </div>
+
+                      <br>
+
+                      <div class="text-center mt-4">
+                        <button class="btn btn-light-blue">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-7">
+                    <div class="z-depth-1-half map-container-6" id=
+                    "map-container-google-11" style="height: 400px">
+                      <iframe allowfullscreen frameborder="0" src=
+                      "https://maps.google.com/maps?q=hoss's%20Country%20Corner&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                      style="border:0"></iframe>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="row text-center" style="margin-bottom:0px">
+                      <div class="col-md-4">
+                        <a class="glyphicon"><span class=
+                        "glyphicon glyphicon-map-marker"></span></a>
+                        <br>
+                        <br>
+
+                        <p>
+                          Long Lake, NY 12847
+                          <br>
+                          United States
+                        </p>
+                      </div>
+
+                      <div class="col-md-4">
+                        <a class="glyphicon"><span class=
+                        "glyphicon glyphicon-earphone"></span></a>
+                        <br>
+                        <br>
+
+                        <p>
+                          800-952-HOSS
+                        </p>
+
+                        <p>
+                          10am - 5pm
+                        </p>
+                      </div>
+
+                      <div class="col-md-4">
+                        <a class="glyphicon"><span class=
+                        "glyphicon glyphicon-envelope"></span></a>
+                        <br>
+                        <br>
+
+                        <p>
+                          info@hccll.com
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-1">
+        </div>
+      </div>
+    </div>
+  -->
+
+    </div>
+
+    <div id="footer" class="container-fluid" style="margin-top: 10px; margin-bottom: 20px;">
+      <div class="row">
+        <div class="col-12-md">
+          <h2 class="noselect text-center">
+            <a href="/index.html" style="color:var(--green)" class="logo">
+              HOSS'S COUNTRY CORNER
+            </a>
+          </h2>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4" style="margin-bottom: 20px;">
+          <h5>Site Map</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="campground.html">Campground</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="employee.html">Employee Portal</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h5>Find Us On</h5>
+          <ul>
+            <li><a href="https://www.facebook.com/hossscountrycorner">Facebook</a></li>
+            <li><a href="https://www.pinterest.com/hosscorner/">Pinterest</a></li>
+            <li><a href="https://www.yelp.com/biz/hosss-country-corner-long-lake?adjust_creative=duckduckgo&amp;utm_campaign=yelp_feed&amp;utm_medium=feed_v2&amp;utm_source=duckduckgo">Yelp</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+
+  </body>
 </html>
